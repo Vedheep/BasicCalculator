@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class StringToIntegerWithScanner {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the console
+        Scanner scanner = new Scanner(System.in);
+   // Prompt the user to enter a number
+        System.out.print("Enter a number: ");
+        // Read the input as a string
+        String numberStr = scanner.nextLine();
+         // Convert the string to an integer using parseInt
+        int number = Integer.parseInt(numberStr);
+        
+        // Print the integer value
+        System.out.println("The integer value is: " + number);
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
